@@ -1,0 +1,128 @@
+\documentclass[14pt]{extreport}
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian,english]{babel}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[italian]{minitoc}% per gli accenti
+\usepackage{fancybox}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{makeidx}
+\usepackage{comment}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{longtable}
+%se avete problemi con il testo che deve andare subito sotto una tabella allora importate il pacchetto:
+%\usepackage{placeins} % e scrivete \FloatBarrier subito dopo all' \end{table}
+
+%rimuove bordi dai link
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+%apice
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{17pt}
+\rhead{Cap.\thechapter}
+\fancyhead[L]{\rightmark}
+%pedice
+\cfoot{\thepage}
+
+\lstset{frame=tb,
+	language=Java,
+	numbers=left,
+	keywordstyle=\color{blue},
+	alsoletter={.}
+}
+\graphicspath{ {./Figure/} }
+
+%formato capitoli, paragrafi e sottoparagrafi
+\usepackage{titlesec}
+\titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
+\titleformat{\section}{\normalfont}{\thesection.}{18pt}{\normalfont\bf}
+\titleformat{\subsection}{\normalfont}{\thesubsection.}{16pt}{\normalfont\bf}
+
+\newcommand{\quotes}[1]{``#1''}
+
+\begin{document}
+\selectlanguage{italian}
+\begin{titlepage}
+\begin{center}
+	\begin{figure}
+    	\includegraphics[width=5cm, height=5cm]{unisa.png}
+    	\centering
+    \end{figure}
+	{\Large Università degli Studi di Salerno}\\[0.2truecm]
+	{\large Dipartimento di Informatica\\Corso di Laurea Magistrale in Informatica}\\
+	\hrulefill
+	\vfill
+
+	%{\Large Informatica}\\
+	\vfill\vfill
+	{\LARGE {\bf Flaky test: mapping study della letteratura e sviluppo di un tool per l’individuazione dei flaky test}}
+
+	\vfill\vfill
+	\begin{table}[h!]
+		\begin{tabular}{llll}
+			\textbf{Relatori:}                       & \textbf{} & \textbf{} & \textbf{Candiato:}          \\
+			\textbf{Ch.ma Prof.ssaFilomena FERRUCCI} & \textbf{} & \textbf{} & \textbf{Giammaria Giordano} \\
+			\textbf{Ch.mo Dott. Pasquale SALZA}      & \textbf{} & \textbf{} & \textbf{Matr.: 0522500509}  \\
+			\textbf{Ch.mo Dott. Valerio TERRAGNI}    & \textbf{} & \textbf{} & \textbf{}                  
+		\end{tabular}
+	\end{table}
+	
+	
+	\vfill
+	\hrulefill 
+	\begin{center} \textbf{ANNO ACCADEMICO 2018/2019}\end{center}
+	
+\end{center}
+\end{titlepage}
+
+\setcounter{page}{1} 		
+\pagenumbering{roman} 
+
+\newpage
+	
+
+\tableofcontents
+\listoffigures %elenco figure
+\listoftables %elenco tabelle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Introduzione}
+\setcounter{page}{1} 		
+\pagenumbering{arabic} 
+\input{Introduzione.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{CAPITOLO 1}
+\input{Capitolo1.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Titolo capitolo}
+\input{Capitolo2.tex}
+
+\chapter{Titolo capitolo}
+\input{Capitolo3.tex}
+
+\input{Bibliografia.tex}
+
+\end{document}

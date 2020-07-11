@@ -1,0 +1,43 @@
+\babel@toc {english}{}
+\babel@toc {italian}{}
+\contentsline {chapter}{\numberline {1}CAPITOLO 1}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Il testing}{4}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Testing unitario}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Testing di integrazione}{5}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Testing di accettazione}{6}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Metodologia Agile}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Configuration Management}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Version Control}{8}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}System building}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Change management}{10}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Release Management}{10}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}Continuous Integration}{11}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Regression Testing}{12}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Problemi di building}{13}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Flaky test}{14}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Esempio di flaky test}{17}{subsection.1.7.1}%
+\contentsline {chapter}{\numberline {2}Titolo capitolo}{20}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Mapping}{20}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Mapping study flaky test}{21}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Domande di ricerca}{21}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Criteri di inclusione/esclusione}{24}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Snowball}{25}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Valutazione della qualità}{25}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Estrazione dei dati}{28}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Minacce alla validità}{30}{subsection.2.2.6}%
+\contentsline {subsubsection}{Minaccia alla validità descrittiva}{30}{subsection.2.2.6}%
+\contentsline {subsubsection}{Minaccia alla validità teorica}{31}{subsection.2.2.6}%
+\contentsline {subsubsection}{Generalizzazione}{31}{subsection.2.2.6}%
+\contentsline {subsubsection}{Validità di interpretazione}{32}{subsection.2.2.6}%
+\contentsline {subsubsection}{Ripetibilità}{32}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Analisi dei dati e classificazione}{32}{subsection.2.2.7}%
+\contentsline {subsubsection}{Numero di dataset (RQ1)}{33}{subsection.2.2.7}%
+\contentsline {subsubsection}{Lavoro su progetti closed source (RQ2)}{34}{figure.2.2}%
+\contentsline {subsubsection}{Linguaggi di programmazione utilizzati (RQ3)}{34}{figure.2.3}%
+\contentsline {subsubsection}{Tipi di build utilizzati (RQ4)}{36}{figure.2.4}%
+\contentsline {subsubsection}{Individuazione del dataset (RQ5)}{37}{figure.2.5}%
+\contentsline {subsubsection}{Quali sono le root cause più frequenti (RQ6)}{38}{figure.2.6}%
+\contentsline {subsubsection}{Metodo empirico per la valutazione delle root cause (RQ7)}{39}{figure.2.7}%
+\contentsline {subsubsection}{A chi viene indirizzata la ricerca mostrata nei diversi studi (RQ8)}{41}{figure.2.8}%
+\contentsline {subsubsection}{Anno di pubblicazione (RQ9)}{42}{figure.2.9}%
+\contentsline {subsection}{\numberline {2.2.8}Conclusioni}{43}{subsection.2.2.8}%

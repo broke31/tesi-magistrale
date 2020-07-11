@@ -1,0 +1,27 @@
+\BOOKMARK [0][-]{chapter.1}{CAPITOLO 1}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Il testing}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Testing unitario}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Testing di integrazione}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Testing di accettazione}{section.1.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Metodologia Agile}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{Configuration Management}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.3.1}{Version Control}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.2}{System building}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.3}{Change management}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.4}{Release Management}{section.1.3}% 11
+\BOOKMARK [1][-]{section.1.4}{Continuous Integration}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.5}{Regression Testing}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.6}{Problemi di building}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.7}{Flaky test}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.7.1}{Esempio di flaky test}{section.1.7}% 16
+\BOOKMARK [0][-]{chapter.2}{Titolo capitolo}{}% 17
+\BOOKMARK [1][-]{section.2.1}{Mapping}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.2}{Mapping study flaky test}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.1}{Domande di ricerca}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.2}{Criteri di inclusione/esclusione}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.3}{Snowball}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.4}{Valutazione della qualit\340}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.5}{Estrazione dei dati}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.6}{Minacce alla validit\340}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.7}{Analisi dei dati e classificazione}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.8}{Conclusioni}{section.2.2}% 27

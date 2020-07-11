@@ -1,0 +1,46 @@
+Con il propagarsi delle metodologie \emph{Agile}, nelle grandi multinazionali in cui
+si sviluppano migliaia di righe di codice ogni giorno, si è reso necessario adottare tecniche di \emph{continuous integration}, le quali permettono agli sviluppatori di
+aggiungere nuove funzionalità ad un sistema software già esistente, per poi eseguire
+in automatico l’intera suite di test per verificare che le nuove funzionalità non abbiano introdotto \emph{bug} all’interno del software. Se durante questa fase non viene riscontrato il fallimento di nessun caso di test, il software potrà essere reso di nuovo
+disponibile per ulteriori modifiche, in caso contrario invece bisognerà individuare il difetto introdotto e correggerlo. Non sempre però il fallimento di un caso di test è causato dell’introduzione di nuovi \emph{bug} all’interno del software, infatti questo può
+derivare dalla presenza di un metodo \emph{flaky} presente all’interno della suite di test.
+
+Un test si definisce \emph{flaky} se il suo comportamento non può essere stabilito in \textbf{maniera deterministica}. Appare quindi evidente che la presenza di un metodo \emph{flaky}
+all’interno della test suite possa incidere non solo sulla qualità, ma anche sui tempi di rilascio e sui costi del software. Inoltre, analisi condotte in diversi studi
+focalizzati sui \emph{flaky test}, hanno mostrato che una delle criticità più frequenti quando si manifesta un \emph{flaky} è capire che cosa l’ha scatenato.
+
+L’obiettivo che ci si pone all’interno di questa tesi è lo sviluppo di un nuovo tool che possa aiutare gli sviluppatori ad identificare la presenza di \emph{flaky} all’interno
+dei loro progetti e a individuare la sua \emph{root cause}. Infatti, definire la \emph{root cause}
+potrebbe rappresentare il primo passo per riuscire a mitigare la problematica dei
+\emph{flaky}. Il tool sviluppato è in grado di individuare \emph{flaky} test, la cui \emph{root cause} non è
+la dipendenza dall’ordine di esecuzione, all’interno di progetti scritti in \textbf{Java} e che fanno uso di \textbf{Maven} come building system. Il tool proposto esegue un certo numero
+di volte uno specifico caso di test, salvando non solo il risultato ottenuto dall’esecuzione (pass o fail), ma anche delle informazioni aggiuntive legate allo stato della macchina su cui si sta eseguendo il test e il tempo di esecuzione del singolo caso di test.
+
+Queste due informazioni sono state aggiunte poiché non venivano riportate in nessuno dei dataset precedentemente rilasciati, ma possono essere utili per fare delle analisi a grana fine per l'individuazione delle \emph{root cause} e di eventuali pattern.
+Infine, oltre alla generazione di un file csv con all’interno le informazioni descritte in precedenza, viene anche generato un file aggiuntivo in cui si va a tenere traccia dell’esito della build di ogni progetto analizzato.
+
+Per valutare questo tool è stato considerato il dataset rilasciato dagli
+sviluppatori di \textbf{iDFlakies}, un framework in grado di individuare un \emph{flaky test} e fare
+una classificazione parziale delle \emph{root cause} per i \emph{flaky} individuati (indipendente
+dall’ordine di esecuzione e dipendente dall’ordine di esecuzione). Da questo dataset sono state selezionate centosessantasei righe, ognuna rappresentante un caso di test
+\emph{flaky} la cui \emph{root cause} era diversa dalla dipendenza dall’ordine di esecuzione del
+test.
+
+Infine, per ognuno dei metodi \emph{flaky} rilevati da questo tool (trentuno test) è stata fatta un'analisi statica del codice sorgente per identificare la \emph{root cause}. Da questa analisi è emerso che per trenta \emph{flaky test} la \emph{root cause}era riconducibile a problemi di \textbf{network}, mentre in un solo caso è stata identificata come root cause il \textbf{multithreading}.
+
+Una volta terminata l’analisi, si è passati ad immagazzinare i dati ottenuti
+all’interno di una base di dati ed a creare dei grafici sui risultati delle singole
+esecuzioni di un caso di test, in modo da evidenziare possibili pattern. Sono quindi
+emersi in alcuni casi dei comportamenti “deterministici” del \emph{flaky test } che dovranno essere ulteriormente approfonditi.
+
+La tesi è organizzata nel seguente modo.
+
+Nel primo capitolo viene presentata una panoramica generale del testing, soffermandosi in particolare sul testing di regressione, sui sistemi di build e sulla \emph{continuous integration}.
+
+Nel secondo capitolo viene presentata un mapping study sistematico della letteratura dei \emph{flaky test}, che ha permesso di comprendere a fondo lo stato dell’arte e di identificare gli approcci che sono stati utilizzati in questi anni per far fronte a
+questa problematica.
+
+Nel terzo capitolo è presentata la costruzione di un tool che possa essere di supporto agli sviluppatori per aiutarli ad individuare metodi \emph{“flaky”} all’interno dei loro progetti. Tale tool va ad estendere un dataset già presente in letteratura
+aggiungendo nuove informazioni che potrebbero essere d’interesse per eventuali ricerche future.
+
+Le conclusioni riassumono i risultati ottenuti e contengono gli sviluppi futuri che potranno essere messi in pratica per ampliare la conoscenza sui \emph{flaky test}.
