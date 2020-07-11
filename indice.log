@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.17)  11 JUL 2020 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.17)  11 JUL 2020 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,47 +496,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count291
 \l__pdf_internal_box=\box61
 )
-(./indice.aux
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-
-LaTeX Warning: Label `fig:mesh1' multiply defined.
-
-)
+(./indice.aux)
 \openout1 = `indice.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -684,25 +644,25 @@ Capitolo 1.
 (./Capitolo1.tex [4
 
 ] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
-<./Figure/esempioFlaky.png, id=277, 426.59375pt x 224.84pt>
+<./Figure/esempioFlaky.png, id=278, 426.59375pt x 224.84pt>
 File: ./Figure/esempioFlaky.png Graphic file (type png)
 <use ./Figure/esempioFlaky.png>
 Package pdftex.def Info: ./Figure/esempioFlaky.png  used on input line 207.
 (pdftex.def)             Requested size: 430.0pt x 226.6509pt.
  [16]
-<./Figure/figura1.2.png, id=282, 756.8275pt x 214.8025pt>
+<./Figure/figura1.2.png, id=284, 756.8275pt x 214.8025pt>
 File: ./Figure/figura1.2.png Graphic file (type png)
 <use ./Figure/figura1.2.png>
 Package pdftex.def Info: ./Figure/figura1.2.png  used on input line 221.
 (pdftex.def)             Requested size: 430.0pt x 122.0421pt.
 
 [17 <./Figure/esempioFlaky.png>] [18 <./Figure/figura1.2.png>]
-<./Figure/figura1.3.png, id=293, 725.71124pt x 222.8325pt>
+<./Figure/figura1.3.png, id=297, 725.71124pt x 222.8325pt>
 File: ./Figure/figura1.3.png Graphic file (type png)
 <use ./Figure/figura1.3.png>
 Package pdftex.def Info: ./Figure/figura1.3.png  used on input line 233.
 (pdftex.def)             Requested size: 430.0pt x 132.03445pt.
-<./Figure/figura1.4.png, id=294, 744.7825pt x 242.9075pt>
+<./Figure/figura1.4.png, id=299, 744.7825pt x 242.9075pt>
 File: ./Figure/figura1.4.png Graphic file (type png)
 <use ./Figure/figura1.4.png>
 Package pdftex.def Info: ./Figure/figura1.4.png  used on input line 243.
@@ -731,67 +691,71 @@ Overfull \hbox (30.00786pt too wide) in paragraph at lines 237--262
  []
 
 [29]
-<./Figure/figura1.5.png, id=361, 378.41376pt x 777.90625pt>
+<./Figure/figura1.5.png, id=366, 378.41376pt x 777.90625pt>
 File: ./Figure/figura1.5.png Graphic file (type png)
 <use ./Figure/figura1.5.png>
 Package pdftex.def Info: ./Figure/figura1.5.png  used on input line 268.
 (pdftex.def)             Requested size: 171.99738pt x 353.57993pt.
  [30 <./Figure/figura1.5.png>] [31] [32]
-<./Figure/1.6.png, id=376, 431.6125pt x 406.51875pt>
+<./Figure/1.6.png, id=382, 431.6125pt x 406.51875pt>
 File: ./Figure/1.6.png Graphic file (type png)
 <use ./Figure/1.6.png>
 Package pdftex.def Info: ./Figure/1.6.png  used on input line 314.
 (pdftex.def)             Requested size: 300.99869pt x 283.50667pt.
  [33 <./Figure/1.6.png>]
-<./Figure/2.3.png, id=382, 569.12625pt x 288.07625pt>
+<./Figure/2.3.png, id=389, 569.12625pt x 288.07625pt>
 File: ./Figure/2.3.png Graphic file (type png)
 <use ./Figure/2.3.png>
 Package pdftex.def Info: ./Figure/2.3.png  used on input line 327.
 (pdftex.def)             Requested size: 430.0pt x 217.66547pt.
  [34 <./Figure/2.3.png>]
-<./Figure/2.4.png, id=388, 515.9275pt x 486.81876pt>
+
+LaTeX Warning: Reference `2.4' on page 35 undefined on input line 338.
+
+<./Figure/2.4.png, id=395, 515.9275pt x 486.81876pt>
 File: ./Figure/2.4.png Graphic file (type png)
 <use ./Figure/2.4.png>
 Package pdftex.def Info: ./Figure/2.4.png  used on input line 341.
 (pdftex.def)             Requested size: 386.99738pt x 365.17259pt.
- [35 <./Figure/2.4.png>]
-<./Figure/2.5.png, id=394, 544.0325pt x 450.68375pt>
+[35 <./Figure/2.4.png>]
+<./Figure/2.5.png, id=402, 544.0325pt x 450.68375pt>
 File: ./Figure/2.5.png Graphic file (type png)
 <use ./Figure/2.5.png>
 Package pdftex.def Info: ./Figure/2.5.png  used on input line 357.
 (pdftex.def)             Requested size: 258.00262pt x 213.74002pt.
  [36 <./Figure/2.5.png>]
-<./Figure/2.6.png, id=400, 518.93875pt x 347.2975pt>
+<./Figure/2.6.png, id=409, 518.93875pt x 347.2975pt>
 File: ./Figure/2.6.png Graphic file (type png)
 <use ./Figure/2.6.png>
 Package pdftex.def Info: ./Figure/2.6.png  used on input line 374.
 (pdftex.def)             Requested size: 258.00262pt x 172.67323pt.
- [37 <./Figure/2.6.png>] [38]
-<./Figure/2.7.png, id=411, 558.085pt x 361.35pt>
+ [37 <./Figure/2.6.png>]
+[38]
+<./Figure/2.7.png, id=422, 558.085pt x 361.35pt>
 File: ./Figure/2.7.png Graphic file (type png)
 <use ./Figure/2.7.png>
-Package pdftex.def Info: ./Figure/2.7.png  used on input line 398.
+Package pdftex.def Info: ./Figure/2.7.png  used on input line 397.
 (pdftex.def)             Requested size: 430.0pt x 278.42232pt.
  [39 <./Figure/2.7.png>] [40]
-<./Figure/2.8.png, id=422, 583.17876pt x 329.23pt>
+<./Figure/2.8.png, id=433, 583.17876pt x 329.23pt>
 File: ./Figure/2.8.png Graphic file (type png)
 <use ./Figure/2.8.png>
-Package pdftex.def Info: ./Figure/2.8.png  used on input line 420.
+Package pdftex.def Info: ./Figure/2.8.png  used on input line 419.
 (pdftex.def)             Requested size: 430.0pt x 242.76231pt.
  [41 <./Figure/2.8.png>]
-<./Figure/2.9.png, id=428, 539.01375pt x 355.3275pt>
+<./Figure/2.9.png, id=440, 539.01375pt x 355.3275pt>
 File: ./Figure/2.9.png Graphic file (type png)
 <use ./Figure/2.9.png>
-Package pdftex.def Info: ./Figure/2.9.png  used on input line 430.
+Package pdftex.def Info: ./Figure/2.9.png  used on input line 429.
 (pdftex.def)             Requested size: 430.0pt x 283.46536pt.
  [42 <./Figure/2.9.png>]
-<./Figure/2.10.png, id=434, 523.9575pt x 442.65375pt>
+<./Figure/2.10.png, id=447, 523.9575pt x 442.65375pt>
 File: ./Figure/2.10.png Graphic file (type png)
 <use ./Figure/2.10.png>
-Package pdftex.def Info: ./Figure/2.10.png  used on input line 442.
+Package pdftex.def Info: ./Figure/2.10.png  used on input line 441.
 (pdftex.def)             Requested size: 430.0pt x 363.28235pt.
  [43 <./Figure/2.10.png>]
-Overfull \hbox (12.14445pt too wide) in paragraph at lines 453--455
+Overfull \hbox (12.14445pt too wide) in paragraph at lines 452--454
 []\OT1/cmr/m/n/14.4 Bisogna ana-liz-za-re con par-ti-co-la-re at-ten-zio-ne an-
 che pro-get-ti closed-
  []
@@ -806,24 +770,24 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the indice.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 463.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 462.
 [44]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 463.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 462.
  (./indice.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 463.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 463.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 462.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 462.
 Package rerunfilecheck Info: File `indice.out' has not changed.
 (rerunfilecheck)             Checksum: 1B9C0FE33638F4605E140E2C7E26AB2B;1849.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 11928 strings out of 482593
- 171923 string characters out of 5949629
+ 11942 strings out of 482593
+ 172097 string characters out of 5949629
  664910 words of memory out of 5000000
- 26442 multiletter control sequences out of 15000+600000
+ 26456 multiletter control sequences out of 15000+600000
  536734 words of font info for 39 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  34i,17n,45p,879b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -835,10 +799,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on indice.pdf (49 pages, 2077027 bytes).
+Output written on indice.pdf (49 pages, 2077946 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
- 409 compressed objects within 5 object streams
+ 516 PDF objects out of 1000 (max. 8388607)
+ 422 compressed objects within 5 object streams
  119 named destinations out of 1000 (max. 500000)
  292 words of extra memory for PDF output out of 10000 (max. 10000000)
 

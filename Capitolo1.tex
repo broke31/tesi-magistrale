@@ -201,12 +201,12 @@ metodo poiché ritenuto “flaky”. Tali provvedimenti però non risultano anco
 risulta onerosa a livello economico e talvolta frustrante per gli sviluppatori, i quali possono spendere ore ed ore prima ottenere un cambio di stato da parte del metodo flaky.
 \subsection{Esempio di flaky test}
 
-Per chiarire ulteriormente la problematica in questione, possiamo considerare il seguente snippet di codice in figura 1.1:
+Per chiarire ulteriormente la problematica in questione, possiamo considerare il seguente snippet di codice in figura \ref{fig:fig1.1}:
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{esempioFlaky}
 	\caption{\emph{Esempio flaky test}}
-	\label{fig:mesh1}
+	\label{fig:fig1.1}
 \end{figure}
 
 Il metodo “\emph{CreateGapLease}” apre il file “\emph{/leases/gap}” ed esegue la scrittura del contenuto della variabile “\emph{contract\_data}” al suo interno ed infine chiude il file.
@@ -215,32 +215,32 @@ uguale al contenuto della variabile “\emph{contract\_data}”.
 Ma cosa avviene nel momento in cui il file “\emph{/leases/gap}” esiste già e contiene già dati al suo interno? In questo caso il test genererà un fail. In questo caso il flaky
 è dovuto semplicemente ad un errato controllo della precondizione del test, ma in generale errori di questo tipo possono capitare nei casi più disparati (es. in ambito di concorrenza, network etc.).
 Una prima strategia di fix può essere quella di verificare l’effettiva esistenza del file “\emph{/leases/gap}” (eliminandolo in caso affermativo).
-La figura 1.2 mostra il codice del metodo “testCreateGapLease” dopo la modifica.
+La figura \ref{fig:fig1.2} mostra il codice del metodo “testCreateGapLease” dopo la modifica.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{figura1.2}
 	\caption{\emph{Snippet di codice modificato}}
-	\label{fig:mesh1}
+	\label{fig:fig1.2}
 \end{figure}
 
 Tuttavia, neanche questa modifica è sufficiente per garantire la corretta esecuzione del caso di test in quanto, se “\emph{/leases/gap}” ha un path di tipo NFS e può essere scritto da un altro test, il metodo “\emph{testCreateGapLease}” può ancora fallire improvvisamente. La soluzione in questo caso consiste nell’effettuare alcune piccole modifiche al codice del metodo “\emph{CreateGapLease}” per rendere unica la
 risorsa di cui ha bisogno.
 
-La figura 1.3 mostra il codice del metodo “\emph{CreateGapLease}” dopo aver effettuato le opportune modifiche.
+La figura \ref{fig:fig.1.3} mostra il codice del metodo “\emph{CreateGapLease}” dopo aver effettuato le opportune modifiche.
 \newpage
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\textwidth]{figura1.3}
 	\caption{\emph{Codice modificato}}
-	\label{fig:mesh1}
+	\label{fig:fig.1.3}
 \end{figure}
 
 La chiamata al metodo “CreateGapLease” verrà effettuata nello stesso modo illustrato precedentemente, ma il test potrà passargli un path differente. Tale strategia impedirà fallimenti ad intermittenza del test case.
 
-La figura 1.4 mostra il codice del metodo nella sua versione finale[6].
+La figura \ref{fig:fig.1.4} mostra il codice del metodo nella sua versione finale[6].
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\textwidth]{figura1.4}
 	\caption{\emph{Versione finale del codice}}
-	\label{fig:mesh1}
+	\label{fig:fig.1.4}
 \end{figure}

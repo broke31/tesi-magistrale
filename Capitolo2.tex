@@ -261,13 +261,13 @@ La tabella sottostante sintetizza i risultati che sono stati ottenuti analizzand
 	\end{tabular}
 \end{table}
 
-Il grafico in figura 2.1 sintetizza tutte le fasi che sono state effettuate per la selezione degli artefatti utili per il mapping sistematico.
+Il grafico in figura \ref{fig:fig.2.1} sintetizza tutte le fasi che sono state effettuate per la selezione degli artefatti utili per il mapping sistematico.
 \newpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.4\textwidth]{figura1.5}
 	\caption{\emph{Sintesi della selezione degli articoli}}
-	\label{fig:mesh1}
+	\label{fig:fig.2.1}
 \end{figure}
 \subsection{Minacce alla validità}
 \subsubsection{Minaccia alla validità descrittiva}
@@ -308,12 +308,12 @@ stato rilasciato un dataset.
 
 Gli unici dataset che sono stati rilasciati (in totale quattro) rientrano nel periodo 2018-2019; questo dato è indice di un argomento di ricerca poco conosciuto e che necessita di ulteriori sviluppi.
 
-Il grafico in figura 2.2 mostra la frequenza di pubblicazione dei dataset messi a disposizione.
+Il grafico in figura \ref{fig:fig.2.2} mostra la frequenza di pubblicazione dei dataset messi a disposizione.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{1.6}
 	\caption{\emph{Frequenza di pubblicazione del dataset}}
-	\label{fig:mesh1}
+	\label{fig:fig.2.2}
 \end{figure}
 
 Dal grafico è emerso che quasi la totalità dei dataset messi a disposizione
@@ -321,12 +321,12 @@ sono stati implementati nel corso del 2019 (75\%). Il numero dei dataset risulta
 \subsubsection{Lavoro su progetti closed source (RQ2)}
 Dalla seconda domanda di ricerca è emerso che la quasi totalità degli studi effettuati non ha considerato progetti closed-source nella loro valutazione e in alcuni articoli questa problematica è stata considerata solo come minaccia per la validità.
 
-Il grafico in figura 2.3 mostra il numero di studi sui quali sono state effettuate ricerche anche su progetti closed-source suddivisi per anno.
+Il grafico in figura \ref{fig:fig2.3} mostra il numero di studi sui quali sono state effettuate ricerche anche su progetti closed-source suddivisi per anno.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{2.3}
 	\caption{\emph{Numero di progetti su cui sono stati condotti gli studi}}
-	\label{fig:mesh1}
+	\label{fig:fig2.3}
 \end{figure}
 \subsubsection{Linguaggi di programmazione utilizzati (RQ3)}
 Dall'analisi effettuata risulta che quasi tutti gli articoli analizzati riportano le caratteristiche del linguaggio di programmazione impiegato per definire gli oggetti
@@ -335,12 +335,12 @@ analizzati è scritta in Java (viene infatti definita come una minaccia in alcun
 articoli analizzati, in quanto il linguaggio potrebbe presentare alcune caratteristiche
 non comuni a tutti i linguaggi di programmazione). È stata quindi approfondita la problematica per capire quale fosse la distribuzione dei linguaggi di programmazione.
 
-Il grafico in figura 2.4 mostra la frequenza di ogni linguaggio di programmazione.
+Il grafico in figura \ref{2.4} mostra la frequenza di ogni linguaggio di programmazione.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{2.4}
 	\caption{\emph{Distribuzione dei linguaggi di programmazione analizzati}}
-	\label{fig:mesh1}
+	\label{fig:fig.2.4}
 \end{figure}
 
 È possibile notare che più della metà dei progetti analizzati sono stati sviluppati in Java. Tale dato non stupisce in quanto attualmente il linguaggio Java risulta essere uno dei più utilizzati al mondo. È altresì importante sottolineare che per alcuni linguaggi la problematica è stata trattata solo in minima parte o non è stata per nulla trattata.
@@ -350,13 +350,13 @@ esplicitamente il sistema di build adoperato durante la costruzione del dataset.
 
 Negli articoli in cui tale informazione è presente, il linguaggio di programmazione utilizzato è sempre stato Java. Dei trenta articoli, in nove è stato riportato anche il tipo di build system utilizzato (in alcuni casi anche più di uno).
 
-Il grafico in figura 2.5 mostra la frequenza dei sistemi di building utilizzati
+Il grafico in figura \ref{fig:fig.2.5} mostra la frequenza dei sistemi di building utilizzati
 all’interno dei progetti che sono stati testati.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{2.5}
 	\caption{\emph{Sistemi di building utilizzati}}
-	\label{fig:mesh1}
+	\label{fig:fig.2.5}
 \end{figure}
 
 È possibile notare che quasi la totalità dei progetti analizzati utilizzano come sistema di build Maven (preso in considerazione in sette articoli), mentre solo il 12\% utilizzano Gradle (preso in considerazione in un solo articolo).
@@ -367,20 +367,19 @@ La strategia più comune risulta quella di scaricare da GitHub i repository più
 
 Le altre strategie utilizzate si basano principalmente sull’uso di Travis (valutando lo stato della build oppure i file di log generati) e sul cercare la stringa “flaky” all’interno dei bug report o nei messaggi di commit all’interno del motore di ricerca di GitHub.
 
-Il grafico in figura 2.6 mostra la percentuale di utilizzo di ogni strategia per individuare i dataset.
+Il grafico in figura \ref{fig:fig.2.6} mostra la percentuale di utilizzo di ogni strategia per individuare i dataset.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{2.6}
 	\caption{\emph{Strategie usate per la costruzione del dataset}}
-	\label{fig:mesh1}
+	\label{fig:fig.2.6}
 \end{figure}
 \subsubsection{Quali sono le root cause più frequenti (RQ6)}
 Sui trenta articoli esaminati solo in dieci casi sono state individuate le \emph{root cause} dei \emph{flaky test}.
 
 In gran parte degli articoli le root cause risultano le stesse,
-ossia: dipendenza dall’ordine, concorrenza, async wait, tempo, rete, random,
-perdita di risorse, operazioni con numeri float e problemi di I/O.
+ossia: dipendenza dall’ordine, concorrenza, async wait, tempo, rete, random, perdita di risorse, operazioni con numeri float e problemi di I/O.
 
 È però interessante soffermarsi sulle root cause “Output restrittivi” e “Interfaccia grafica”, tali root
 cause infatti sono presenti con una percentuale molto bassa (2\%) poiché non sono state mai individuate precedentemente, ma sono frutto di studi effettuati nel 2019. 
@@ -391,13 +390,13 @@ Possiamo quindi definirle nel seguente modo:
 	\item \emph{Interfaccia grafica}: Un’interfaccia grafica viene definita come “flaky” nel momento in cui avviene una mancata comunicazione tra il processo che esegue il rendering e l’interfaccia stessa.
 \end{itemize}
 
-La figura 2.7 mostra le root cause più comuni.
+La figura \ref{fig:fig.2.7} mostra le root cause più comuni.
 \newpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{2.7}
 	\caption{\emph{Root cause dei flaky test}}
-	\label{fig:mesh1}
+	\label{fig:fig.2.7}
 \end{figure}
 \subsubsection{Metodo empirico per la valutazione delle root cause (RQ7)}
 Dagli articoli che rispondono a questa domanda di ricerca sono state estratte le tecniche adoperate per valutare le root cause dei flaky test.
@@ -413,35 +412,35 @@ nell’effettuare nuovamente l’esecuzione di un caso di test e verificare se q
 	\subitem Dinamica: Viene eseguito il codice sorgente del test e si valutano glioutput generati e i file di log scritti. Se si nota una discordanza tra le due esecuzioni, il metodo viene definito flaky.
 \end{itemize}
 
-Il grafico in figura 2.8 mostra le frequenze di utilizzo di ogni tecnica che è stata descritta precedentemente.
+Il grafico in figura \ref{fig:fig.2.8} mostra le frequenze di utilizzo di ogni tecnica che è stata descritta precedentemente.
 \newpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{2.8}
 	\caption{\emph{Strategia per individuare i flaky test}}
-	\label{fig:mesh1}
+	\label{fig:fig.2.8}
 \end{figure}
 \subsubsection{A chi viene indirizzata la ricerca mostrata nei diversi studi (RQ8)}
 Dall'analisi effettuata è emerso che in cinque artefatti è chiaramente indicato a chi fosse rivolto lo studio (grandi aziende e ambito accademico); invece, nei restanti artefatti si può intuire che lo studio è rivolto ad un pubblico prettamente accademico.
 
-La figura 2.0 mostra la percentuale degli articoli dove vengono menzionati sia le aziende che gli accademici come fruitori finali dello studio, comparato a quelli dove vengono citati solo gli accademici.\newpage
+La figura \ref{fig:fig.2.9} mostra la percentuale degli articoli dove vengono menzionati sia le aziende che gli accademici come fruitori finali dello studio, comparato a quelli dove vengono citati solo gli accademici.\newpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{2.9}
 	\caption{\emph{Ambito di ricerca per ogni artefatto}}
-	\label{fig:mesh1}
+	\label{fig:fig.2.9}
 \end{figure}
 
 È interessante soffermarsi su quest’ultima percentuale poiché nonostante il problema sia stato posto inizialmente dalle grandi aziende (Google, Facebook, Huawei in primis), esso è diventato un argomento su cui sono nati molteplici studi da parte degli accademici.
 \subsubsection{Anno di pubblicazione (RQ9)}
 Gran parte degli studi sono stati pubblicati tra il 2018 e il 2019 (il 63\%), questo ci suggerisce che l’argomento rappresenta una problematica attuale ed è tuttora molto studiato.
-La figura 2.10 mostra la frequenza di pubblicazione degli artefatti suddivisa per anni.
+La figura \ref{fig:fig.2.10} mostra la frequenza di pubblicazione degli artefatti suddivisa per anni.
 \newpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\textwidth]{2.10}
 	\caption{\emph{Frequenza di pubblicazione suddivisa per anni}}
-	\label{fig:mesh1}
+	\label{fig:fig.2.10}
 \end{figure}
 \subsection{Conclusioni}
 	Dallo studio effettuato è emerso che:
