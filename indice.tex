@@ -18,6 +18,15 @@
 \usepackage{enumerate}
 \usepackage[shortlabels]{enumitem}
 \usepackage{longtable}
+\usepackage{geometry}
+
+\usepackage{listings}
+\lstset{
+	language=bash,
+	breaklines=true,
+	basicstyle=\ttfamily
+}
+
 %se avete problemi con il testo che deve andare subito sotto una tabella allora importate il pacchetto:
 %\usepackage{placeins} % e scrivete \FloatBarrier subito dopo all' \end{table}
 
@@ -68,22 +77,22 @@
 	\vfill
 
 	%{\Large Informatica}\\
-	\vfill\vfill
-	{\LARGE {\bf Flaky test: mapping study della letteratura e sviluppo di un tool per l’individuazione dei flaky test}}
+	\vfill\vfill \vfill
+	{\large {\bf Flaky test: mapping study della letteratura e sviluppo di un tool per l’individuazione dei flaky test}}
 
 	\vfill\vfill
 	\begin{table}[h!]
 		\begin{tabular}{llll}
 			\textbf{Relatori:}                       & \textbf{} & \textbf{} & \textbf{Candiato:}          \\
-			\textbf{Ch.ma Prof.ssaFilomena FERRUCCI} & \textbf{} & \textbf{} & \textbf{Giammaria Giordano} \\
+			\textbf{Ch.ma Prof.ssa Filomena FERRUCCI} & \textbf{} & \textbf{} & \textbf{Giammaria Giordano} \\
 			\textbf{Ch.mo Dott. Pasquale SALZA}      & \textbf{} & \textbf{} & \textbf{Matr.: 0522500509}  \\
 			\textbf{Ch.mo Dott. Valerio TERRAGNI}    & \textbf{} & \textbf{} & \textbf{}                  
 		\end{tabular}
 	\end{table}
-	
-	
+
 	\vfill
 	\hrulefill 
+
 	\begin{center} \textbf{ANNO ACCADEMICO 2018/2019}\end{center}
 	
 \end{center}
@@ -91,13 +100,13 @@
 
 \setcounter{page}{1} 		
 \pagenumbering{roman} 
-
+\newpage
 \newpage
 	
 
 \tableofcontents
 \listoffigures %elenco figure
-\listoftables %elenco tabelle
+%\listoftables %elenco tabelle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -105,6 +114,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Introduzione}
+\section*{}
 \setcounter{page}{1} 		
 \pagenumbering{arabic} 
 \input{Introduzione.tex}
@@ -115,14 +125,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{CAPITOLO 1}
 \input{Capitolo1.tex}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Titolo capitolo}
+\chapter{CAPITOLO 2}
 \input{Capitolo2.tex}
-
-\chapter{Titolo capitolo}
+\chapter{Capitolo 3}
 \input{Capitolo3.tex}
-
+\appendix
+\chapter{Appendice A}
+\input{AppendiceA.tex}
 \input{Bibliografia.tex}
+
 
 \end{document}

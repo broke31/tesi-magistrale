@@ -14,7 +14,7 @@
 \BOOKMARK [1][-]{section.1.6}{Problemi di building}{chapter.1}% 14
 \BOOKMARK [1][-]{section.1.7}{Flaky test}{chapter.1}% 15
 \BOOKMARK [2][-]{subsection.1.7.1}{Esempio di flaky test}{section.1.7}% 16
-\BOOKMARK [0][-]{chapter.2}{Titolo capitolo}{}% 17
+\BOOKMARK [0][-]{chapter.2}{CAPITOLO 2}{}% 17
 \BOOKMARK [1][-]{section.2.1}{Mapping}{chapter.2}% 18
 \BOOKMARK [1][-]{section.2.2}{Mapping study flaky test}{chapter.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.1}{Domande di ricerca}{section.2.2}% 20
@@ -25,3 +25,15 @@
 \BOOKMARK [2][-]{subsection.2.2.6}{Minacce alla validit\340}{section.2.2}% 25
 \BOOKMARK [2][-]{subsection.2.2.7}{Analisi dei dati e classificazione}{section.2.2}% 26
 \BOOKMARK [2][-]{subsection.2.2.8}{Conclusioni}{section.2.2}% 27
+\BOOKMARK [0][-]{chapter.3}{Capitolo 3}{}% 28
+\BOOKMARK [1][-]{section.3.1}{Creazione del dataset}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.2}{Approccio alla problematica}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.2.1}{Primo approccio}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.2}{Secondo Approccio}{section.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.2.3}{Ottimizzazione degli script}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.4}{Esecuzione degli script su metodi OD}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.5}{Grafico dei dati ottenuti}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.6}{Root cause pi\371 frequenti}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.7}{Limiti della ricerca}{section.3.2}% 37
+\BOOKMARK [0][-]{chapter.4}{Conclusioni}{}% 38
+\BOOKMARK [0][-]{appendix.Alph1}{Appendice A}{}% 39
