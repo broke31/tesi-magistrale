@@ -1,5 +1,4 @@
 \documentclass[14pt]{extreport}
-
 \usepackage[utf8]{inputenc}
 \usepackage[italian,english]{babel}
 \usepackage{graphicx}
@@ -9,7 +8,7 @@
 \usepackage[italian]{minitoc}% per gli accenti
 \usepackage{fancybox}
 \usepackage{verbatim}
-\usepackage{url}
+\usepackage{xurl}
 \usepackage{color}
 \usepackage{listings}
 \usepackage{makeidx}
@@ -18,9 +17,25 @@
 \usepackage{enumerate}
 \usepackage[shortlabels]{enumitem}
 \usepackage{longtable}
-\usepackage{geometry}
-
+\usepackage{emptypage}
+\usepackage
+[
+a4paper,% other options: a3paper, a5paper, etc
+left=3.5cm,
+right=3cm,
+top=3cm,
+bottom=3cm,
+% use vmargin=2cm to make vertical margins equal to 2cm.
+% us  hmargin=3cm to make horizontal margins equal to 3cm.
+% use margin=3cm to make all margins  equal to 3cm.
+]
+{geometry}
+\usepackage{fancyhdr}
+\usepackage{microtype}
 \usepackage{listings}
+\usepackage{fixltx2e}
+\usepackage{indentfirst}
+\usepackage{lscape}
 \lstset{
 	language=bash,
 	breaklines=true,
@@ -64,6 +79,7 @@
 \newcommand{\quotes}[1]{``#1''}
 
 \begin{document}
+\newgeometry{margin=3cm}
 \selectlanguage{italian}
 \begin{titlepage}
 \begin{center}
@@ -77,34 +93,30 @@
 	\vfill
 
 	%{\Large Informatica}\\
-	\vfill\vfill \vfill
+	\vfill\vfill
 	{\large {\bf Flaky test: mapping study della letteratura e sviluppo di un tool per l’individuazione dei flaky test}}
 
 	\vfill\vfill
 	\begin{table}[h!]
 		\begin{tabular}{llll}
-			\textbf{Relatori:}                       & \textbf{} & \textbf{} & \textbf{Candiato:}          \\
-			\textbf{Ch.ma Prof.ssa Filomena FERRUCCI} & \textbf{} & \textbf{} & \textbf{Giammaria Giordano} \\
-			\textbf{Ch.mo Dott. Pasquale SALZA}      & \textbf{} & \textbf{} & \textbf{Matr.: 0522500509}  \\
-			\textbf{Ch.mo Dott. Valerio TERRAGNI}    & \textbf{} & \textbf{} & \textbf{}                  
+          \textbf{Relatori:}& & & \textbf{Candiato:} \\
+			\textbf{Ch.ma Prof.ssa Filomena FERRUCCI} & & & \textbf{Giammaria Giordano} \\
+			\textbf{Ch.mo Dott. Pasquale SALZA}      & &  & \textbf{Matr.: 0522500509}  \\
+			\textbf{Ch.mo Dott. Valerio TERRAGNI} &  &  & 
 		\end{tabular}
 	\end{table}
-
-	\vfill
-	\hrulefill 
-
+	\hrulefill
 	\begin{center} \textbf{ANNO ACCADEMICO 2018/2019}\end{center}
 	
 \end{center}
 \end{titlepage}
-
-\setcounter{page}{1} 		
-\pagenumbering{roman} 
-\newpage
-\newpage
-	
-
-\tableofcontents
+\restoregeometry		
+\pagenumbering{roman}
+{
+	\pagestyle{plain}
+	\tableofcontents
+	\cleardoublepage
+}
 \listoffigures %elenco figure
 %\listoftables %elenco tabelle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,26 +125,32 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter*{Introduzione}
-\section*{}
+
 \setcounter{page}{1} 		
 \pagenumbering{arabic} 
-\input{Introduzione.tex}
-
-
+\input{Introduzione/Introduzione.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{CAPITOLO 1}
-\input{Capitolo1.tex}
+\input{Capitolo1/Capitolo1.tex}
 \chapter{CAPITOLO 2}
-\input{Capitolo2.tex}
+\input{Capitolo2/Capitolo2.tex}
 \chapter{Capitolo 3}
-\input{Capitolo3.tex}
-\appendix
-\chapter{Appendice A}
-\input{AppendiceA.tex}
-\input{Bibliografia.tex}
-
-
+\input{Capitolo3/Capitolo3.tex}
+\chapter*{Conclusioni}
+\input{Conclusioni/Conclusioni.tex}
+%\appendix
+%\bibliographystyle{ieeetr}
+%\bibliography{Reference}
+%\chapter*{Appendice A}
+%\input{AppendiceA/AppendiceA.tex}
+%\chapter*{Bibliografia}
+%\input{Bibliografia/Bibliografia.tex}
+\chapter*{Sitografia}
+\input{Sitografia/Sitografia.tex}
+\chapter*{Ringraziamenti}
+\input{Ringraziamenti/Ringraziamenti.tex}
 \end{document}

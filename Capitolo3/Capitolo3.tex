@@ -1,3 +1,5 @@
+\fancyhead[L]{CAPITOLO 3}
+\fancyhead[C]{}
 \section{Creazione del dataset}
 Dall’analisi effettuata nel capitolo precedente sono emerse diverse criticità nello studio dei \emph{flaky test}. Tali criticità sono sinonimo di un argomento di ricerca ancora molto da approfondire. Le problematiche maggiori che sono state sono evidenziate all’interno della ricerca sono principalmente legate alla carenza di dati
 messi a disposizione per la comunità. Infatti, in molti degli studi precedentemente analizzati, la carenza di dati viene considerata una minaccia alla validità poiché i progetti considerati sono quasi tutti scritti in linguaggio \textbf{Java} ed usano \textbf{Maven} come
@@ -44,7 +46,7 @@ rilasciato.
 \newpage
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\textwidth]{3.1}
+	\includegraphics[width=1\textwidth]{3.1}
 	\caption{\emph{Parte del dataset di IDFlakies}}
 	\label{fig:datasetRilasciato}
 \end{figure}
@@ -131,11 +133,11 @@ L’output di questo script consiste in un file csv (“outputIDFlakies.csv”) 
 	\item Method Name.
 \end{itemize}
 
-In figura \ref{fig: outputIDFlakies} è possibile osservare un esempio completo dell’output generato dallo script “IDFlakies.sh”.
+In figura \ref{fig:outputIDFlakies} è possibile osservare un esempio completo dell’output generato dallo script “IDFlakies.sh”.
 \newpage
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{3.2}
+	\includegraphics[width=1\textwidth]{3.2}
 	\caption{\emph{Esempio di output generato da IDFlakies.sh}}
 	\label{fig:outputIDFlakies}
 \end{figure}
@@ -184,14 +186,13 @@ La figura \ref{fig:csvIntermedio} mostra un esempio di file csv intermedio. Le i
 \newpage
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\textwidth]{3.4}
+	\includegraphics[width=1\textwidth]{3.4}
 	\caption{\emph{Esempio del csv intermedio}}
 	\label{fig:csvIntermedio}
 \end{figure}
-\newpage
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\textwidth]{3.5}
+	\includegraphics[width=1\textwidth]{3.5}
 	\caption{\emph{Esempio del csv finale}}
 	\label{fig:csvFinale}
 \end{figure}
@@ -241,14 +242,15 @@ Il grafico in figura\ref{fig:AndamentoFlaky} mostra l’andamento del metodo
 	\label{fig:AndamentoFlaky}
 \end{figure}
 
-Com’è possibile osservare dal grafico, tale metodo presenta quattro fallimenti su mille esecuzioni. Il grafico in figura \ref{fig:fallimentobulk} mostra il fallimento del metodo “\emph{testBulkClusterJoining}” appartenente alla classe “\emph{ZKTest}” del progetto “\textbf{Noxy}”.
-\newpage
+Com’è possibile osservare dal grafico, tale metodo presenta quattro fallimenti su mille esecuzioni.\newline
+Il grafico in figura \ref{fig:fallimentobulk} mostra il fallimento del metodo “\emph{testBulkClusterJoining}” appartenente alla classe “\emph{ZKTest}” del progetto “\textbf{Noxy}”.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{3.7}
 	\caption{\emph{Andamento del metodo testBulkClusterJoining}}
 	\label{fig:fallimentobulk}
 \end{figure}
+\newline
 Il metodo preso in esame presentava una serie di successi consecutivi (152) per poi iniziare una serie di fallimenti (848). Il metodo quindi è stato ritestato ma ha dato sempre risultati simili a quello mostrato precedentemente.
 L’ultimo metodo che si vuole illustrare è del progetto “timely”. Il metodo in questione è: “\emph{testMultipleTimeSeriesMovingAverage}” appartenente alla classe
 “\emph{TimeSeriesGroupingIteratorTest}”. Tale metodo risulta molto interessante poiché mostra un fallimento ogni volta che scatta il 58esimo minuto di un’ora.
@@ -261,7 +263,6 @@ La figura 3.8 mostra l’esecuzione del metodo
 \end{figure}
 Per ottenere una maggiore sicurezza, si è quindi proceduto ad eseguire altre due volte il metodo sopra elencato.
 Le figure \ref{fig:riesecuzione1} e \ref{fig:riesecuzione2} mostrano i risultati delle altre esecuzioni effettuate.
-\newpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{3.9}
@@ -274,6 +275,7 @@ Le figure \ref{fig:riesecuzione1} e \ref{fig:riesecuzione2} mostrano i risultati
 	\caption{\emph{Terza esecuzione del test in analisi}}
 	\label{fig:riesecuzione2}
 \end{figure}
+\newline
 Possiamo quindi considerare questo tipo di flaky “deterministico” in quanto presenta un pattern ben preciso.
 \subsection{Root cause più frequenti}
 Sono state infine analizzate le root cause dei flaky test individuati tramite una
@@ -291,17 +293,4 @@ Durante tutta la fase di ricerca sono emersi diversi limiti, alcuni dei quali so
 \item Lentezza nell’eseguire un singolo caso di test: In alcuni casi sono stati impiegati svariati minuti per eseguire un singolo caso di test; da una indagine effettuata, il sistema di build di Maven riconfigura parte dell’ambiente ad ogni singola esecuzione. Tale riconfigurazione può impiegare anche diversi minuti;
 \item Limiti hardware: Gli esperimenti sono stati eseguiti su una macchina Ubuntu 16.04 4GB di RAM 2. Intel Core i3-2100 CPU 3.10GHzx4;
 \item Sha non validi: In alcuni casi non c’è stata la possibilità di eseguire l’allineamento sul branch indicato dal dataset in quanto è stato restituito il seguente errore: “reference is not a tree” nel momento in cui è stato eseguito il comando “git checkout”.
-\end{itemize}
-\chapter{Conclusioni}
-Nella prima parte della tesi è stata effettuato un mapping study sistematico della letteratura. Questa ricerca ha evidenziato una conoscenza ancora in stato embrionale sull’argomento ed in molti casi una carenza di dati. È emerso che nel tempo sono stati rilasciati pochi dataset sulla problematica trattata e prevalentemente di natura open-source. Inoltre, quasi la totalità degli studi si è concentrata su un unico linguaggio di programmazione (\textbf{Java}) e su un unico sistema di building (\textbf{Maven}). Non sempre sono state descritte in maniera accurata le tecniche utilizzate per la costruzione dei dataset (in alcuni casi sono stati riutilizzati dei dataset preesistenti), inoltre le \emph{root cause} sono state individuate in maniera parziale in quanto in alcuni articoli più recenti ne sono comparse di nuove (soprattutto per sistemi operativi mobile) che non erano ancora state individuate.
-
-Si è quindi deciso di contribuire alla costruzione di un nuovo tool per l’identificazione dei \emph{flaky test} indipendenti dall’ordine. Partendo dal dataset già rilasciato dagli sviluppatori di \textbf{iDFlakies}, sono state analizzati centosessantasei casi di test classificati come non dipendenti dall’ordine. Di questi, trentuno hanno mostrato un comportamento “flaky”. Sono state poi analizzate le root cause di questi metodi ed è emerso che nella quasi totalità dei casi (trenta \emph{flaky test}) la \emph{root cause} era legata al network, mentre soltanto per un \emph{flaky test} la \emph{root cause} era legata al multithreading. Il tool ha permesso di ottenere informazioni più dettagliate su particolari metodi “flaky”, come lo stato della macchina prima e dopo l’esecuzione del test e il timestamp di ogni singola iterazione. Inoltre, il tool ha evidenziato anche i limiti degli attuali sistemi di build che in molti casi risultano poco ottimizzati per affrontare adeguatamente lo studio della problematica in esame.
-
-Infine, i risultati sono stati immagazzinati all’interno di una base di dati e sono
-stati rappresentati sotto forma di grafici in modo da evidenziare eventuali pattern. Dai risultati è emerso che in alcuni casi è stato riscontrato effettivamente la presenza di un pattern, aprendo la strada all’ipotesi che alcuni flaky test abbiano un comportamento deterministico. I risultati ottenuti dovranno essere ulteriormente approfonditi.
-Gli sviluppi futuri del lavoro saranno:
-\begin{itemize}
-\item “Instrumentation” del codice per poter monitorare ed avere maggiore controllo sui casi di test che sono in esecuzione;
-\item Ampliare il tool in modo da poter individuare flaky test dipendenti dall’ordine;
-\item Rendere il tool indipendente dal linguaggio di programmazione in cui sono scritti i progetti in analisi.
 \end{itemize}
