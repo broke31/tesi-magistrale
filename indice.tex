@@ -18,6 +18,9 @@
 \usepackage[shortlabels]{enumitem}
 \usepackage{longtable}
 \usepackage{emptypage}
+\usepackage{lastpage}
+
+\usepackage{fancyhdr}
 \usepackage
 [
 a4paper,% other options: a3paper, a5paper, etc
@@ -36,6 +39,8 @@ bottom=3cm,
 \usepackage{fixltx2e}
 \usepackage{indentfirst}
 \usepackage{lscape}
+\usepackage{setspace}
+\onehalfspacing %interlinea 1.5
 \lstset{
 	language=bash,
 	breaklines=true,
@@ -110,14 +115,22 @@ bottom=3cm,
 	
 \end{center}
 \end{titlepage}
-\restoregeometry		
+\restoregeometry
+\newpage\null\thispagestyle{empty}\newpage		
 \pagenumbering{roman}
 {
 	\pagestyle{plain}
 	\tableofcontents
 	\cleardoublepage
 }
-\listoffigures %elenco figure
+\pagenumbering{roman}
+{
+	\pagestyle{plain}
+	\listoffigures
+	\cleardoublepage
+}
+
+ %elenco figure
 %\listoftables %elenco tabelle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -134,6 +147,7 @@ bottom=3cm,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{CAPITOLO 1}
 \input{Capitolo1/Capitolo1.tex}
 \chapter{CAPITOLO 2}
@@ -142,13 +156,15 @@ bottom=3cm,
 \input{Capitolo3/Capitolo3.tex}
 \chapter*{Conclusioni}
 \input{Conclusioni/Conclusioni.tex}
-%\appendix
-%\bibliographystyle{ieeetr}
-%\bibliography{Reference}
-%\chapter*{Appendice A}
-%\input{AppendiceA/AppendiceA.tex}
-%\chapter*{Bibliografia}
-%\input{Bibliografia/Bibliografia.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Appendice A}
+\input{AppendiceA/AppendiceA.tex}
+\fancypagestyle{plain}{%
+	\renewcommand{\headrulewidth}{0pt}%
+	\fancyhf{}%
+}
+\bibliographystyle{unsrt}
+\bibliography{Reference} % bibliografia
 \chapter*{Sitografia}
 \input{Sitografia/Sitografia.tex}
 \chapter*{Ringraziamenti}

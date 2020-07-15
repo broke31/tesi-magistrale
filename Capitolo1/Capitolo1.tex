@@ -1,5 +1,8 @@
 \fancyhead[L]{CAPITOLO 1}
 \fancyhead[C]{}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+
 \section{Il testing}
 Come avviene per qualsiasi oggetto, materiale o immateriale, anche il
 processo di sviluppo di un prodotto software può essere suddiviso e schematizzato in una serie di step o fasi. Nella prima fase è necessario individuare e fissare i requisiti che il sistema software dovrà avere, a tale scopo può essere effettuata
@@ -17,7 +20,7 @@ Tra i vari tipi di testing, è possibile citare i seguenti come esempio:
 Essi vengono applicati in successione per effettuare un collaudo del software
 a diversi livelli.
 \subsection{Testing unitario}
-[2]Il testing unitario viene utilizzato per individuare possibili differenze tra le specifiche di un particolare modulo del sistema e la sua realizzazione. In questa fase vengono considerati piccoli \emph{snippet} di codice denominati moduli e vengono testati in maniera indipendente tra loro. Con questa tipologia di testing è possibile
+\cite{bruegge2009object}Il testing unitario viene utilizzato per individuare possibili differenze tra le specifiche di un particolare modulo del sistema e la sua realizzazione. In questa fase vengono considerati piccoli \emph{snippet} di codice denominati moduli e vengono testati in maniera indipendente tra loro. Con questa tipologia di testing è possibile
 individuare eventuali fault presenti all’interno del modulo stesso.
 \subsection{Testing di integrazione}
 Dopo aver terminato la fase di testing unitario, lo step successivo prevede l’applicazione del testing di integrazione. In questo caso vengono integrate tra loro tutte le varie componenti create durante la fase di testing unitario e si valuta il comportamento di un determinato modulo nel momento in cui interagisce con un altro.
@@ -45,7 +48,7 @@ La metodologia \emph{Agile} prevede lo sviluppo di piccoli “incrementi” di f
 Questa metodologia è stata ideata e sviluppata per l’applicazione a team i cui membri, pur lavorando per lunghi periodi di tempo allo sviluppo dello stesso prodotto software, esercitano la loro attività in aree anche geograficamente distanti tra loro. Gli approcci con metodologie \emph{Agile} vanno a diminuire l’\emph{overhead\footnote{Il termine overhead indica le risorse accessorie che sono richieste per completare un particolare task.}} di sviluppo software, in quanto non prevedono la produzione di gran parte della documentazione che veniva elaborata nel modello a cascata durante la fase di pianificazione, ma si produce documentazione secondo il principio del \emph{“documentare solo quando è necessario”}. Ciò ha permesso ai programmatori di
 concentrarsi sullo sviluppo del software piuttosto che sulla fase di progettazione e documentazione dello stesso.
 \section{Configuration Management}
-[6]I sistemi software sono soggetti a costanti cambiamenti, sia nella fase di
+\cite{sommerville2011software}I sistemi software sono soggetti a costanti cambiamenti, sia nella fase di
 sviluppo che nella fase di rilascio. Spesso essi possono subire cambiamenti sia in risposta a nuovi requisiti, sia in risposta all’introduzione di nuove tecnologie
 hardware. Molti sistemi software possono quindi essere considerati come un insieme di versioni differenti, ognuna delle quali dovrà essere mantenuta e gestita
 opportunamente.
@@ -109,7 +112,7 @@ codice sorgente, ma viene corredato di altri feature, quali:
 \end{itemize}
 \section{Continuous Integration}
 La \emph{continuous integration} è una pratica comunemente applicata
-nell’ingegneria del software. Questa tecnica, nata negli anni ‘90, è stata inizialmente utilizzata solo da poche grandi aziende come, per esempio, Microsoft, Google etc. Con il passare degli anni il suo impiego è andato via via crescendo, grazie alla sua notevole facilità di costruire processi automatizzati per la compilazione, l’analisi statica ed effettuare la fase di test.[3]
+nell’ingegneria del software. Questa tecnica, nata negli anni ‘90, è stata inizialmente utilizzata solo da poche grandi aziende come, per esempio, Microsoft, Google etc. Con il passare degli anni il suo impiego è andato via via crescendo, grazie alla sua notevole facilità di costruire processi automatizzati per la compilazione, l’analisi statica ed effettuare la fase di test.\cite{zhang2019large}
 
 Siccome le metodologie \emph{Agile} prevedono l’aggiunta di poche funzionalità in ogni \emph{sprint}, la \emph{continuous integration} viene effettuata ogni qualvolta avviene un cambiamento all’interno del codice sorgente.
 
@@ -162,7 +165,7 @@ da eseguire. Tra quelle rinvenute in letteratura possiamo citare le seguenti:
 
 Tuttavia, i vari approcci che afferiscono alle due tipologie succitate eseguono tipicamente il run dei casi di test sempre nello stesso ordine, ma, questa assunzione, come illustrato nel successivo paragrafo è non è sempre da considerarsi veritiera.
 \section{Flaky test}
-I \emph{flaky test} sono dei particolari test case che possono mostrare un risultato di pass o fail in maniera \textbf{non deterministica}, ovvero senza che siano stati apportati cambiamenti nel codice da testare.[1] Solitamente, quando durante il test di regressione si ha il fallimento di un test, quest’ultimo indica che è stato introdotto
+I \emph{flaky test} sono dei particolari test case che possono mostrare un risultato di pass o fail in maniera \textbf{non deterministica}, ovvero senza che siano stati apportati cambiamenti nel codice da testare.\cite{shi2019ifixflakies} Solitamente, quando durante il test di regressione si ha il fallimento di un test, quest’ultimo indica che è stato introdotto
 un fault nel codice sorgente; gli sviluppatori quindi procedono ad effettuare la fase
 di debug per individuare il bug. Tuttavia, in presenza di un test flaky, il fallimento del testing non è per forza indice dell’introduzione di un fault all’interno del
 sistema.
@@ -177,7 +180,7 @@ In letteratura, la problematica dei \emph{flaky test} viene studiata da circa qu
 	\item Un \emph{flaky test} può essere indipendente dall’ordine: In questo caso ovviamente è un flaky che non dipende dall’ordine in cui viene eseguito. Spesso tali flaky fanno uso di rete, operazioni di input/output, uso di thread, etc.
 \end{itemize}
 
-Negli anni sono state individuate diverse categorie di \emph{root cause}, le più ricorrenti sono[5]:
+Negli anni sono state individuate diverse categorie di \emph{root cause}, le più ricorrenti sono\cite{luo2014empirical}:
 \begin{itemize}
 	\item \emph{Async Wait}: Questa categoria è caratterizzata da test che effettuano chiamate
 	asincrone senza però attendere il risultato;
@@ -195,8 +198,8 @@ Negli anni sono state individuate diverse categorie di \emph{root cause}, le pi�
 	tempo (errori di fuso orario, rappresentazioni diverse dell’ora, etc.).
 \end{itemize}
 
-Negli anni sono state adottate diverse strategie per tentare di minimizzare la problematica dei flaky test: Google per esempio ha creato il decoratore “@flaky”[1]
-in modo da poter rieseguire un certo numero di volte tutti i test con successi ad intermittenza. Anche \textbf{JUnit} (versione 5) e \textbf{Maven} hanno introdotto la possibilità di rieseguire un test case un certo numero di volte[4][5] o di ignorare un particolare
+Negli anni sono state adottate diverse strategie per tentare di minimizzare la problematica dei flaky test: Google per esempio ha creato il decoratore “@flaky”\textsuperscript{[4]}
+in modo da poter rieseguire un certo numero di volte tutti i test con successi ad intermittenza. Anche \textbf{JUnit} (versione 5) e \textbf{Maven} hanno introdotto la possibilità di rieseguire un test case un certo numero di volte\cite{petersen2015guidelines}\cite{luo2014empirical} o di ignorare un particolare
 metodo poiché ritenuto “flaky”. Tali provvedimenti però non risultano ancora sufficienti per riuscire a minimizzare l’impatto economico dovuto alla presenza di \emph{flaky test} all’interno della suite di test. Attualmente, la tecnica più utilizzata per verificare la presenza di flaky all’interno di un progetto software consiste nel fare un rerun del test case finché esso non viene eseguito con successo. Tale tecnica però
 risulta onerosa a livello economico e talvolta frustrante per gli sviluppatori, i quali possono spendere ore ed ore prima ottenere un cambio di stato da parte del metodo flaky.
 \subsection{Esempio di flaky test}
@@ -237,7 +240,7 @@ La figura \ref{fig:fig.1.3} mostra il codice del metodo “\emph{CreateGapLease}
 
 La chiamata al metodo “CreateGapLease” verrà effettuata nello stesso modo illustrato precedentemente, ma il test potrà passargli un path differente. Tale strategia impedirà fallimenti ad intermittenza del test case.
 
-La figura \ref{fig:fig.1.4} mostra il codice del metodo nella sua versione finale[6].
+La figura \ref{fig:fig.1.4} mostra il codice del metodo nella sua versione finale\textsuperscript{[6]}.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\textwidth]{figura1.4}

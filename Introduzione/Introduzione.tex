@@ -2,13 +2,14 @@
 \fancyhf{}
 \fancyhead[L]{INTRODUZIONE}
 \fancyhead[C]{}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
 Con il propagarsi delle metodologie \emph{Agile}, nelle grandi multinazionali in cui
 si sviluppano migliaia di righe di codice ogni giorno, si è reso necessario adottare tecniche di \emph{continuous integration}, le quali permettono agli sviluppatori di
 aggiungere nuove funzionalità ad un sistema software già esistente, per poi eseguire
 in automatico l’intera suite di test per verificare che le nuove funzionalità non abbiano introdotto \emph{bug} all’interno del software. Se durante questa fase non viene riscontrato il fallimento di nessun caso di test, il software potrà essere reso di nuovo
 disponibile per ulteriori modifiche, in caso contrario invece bisognerà individuare il difetto introdotto e correggerlo. Non sempre però il fallimento di un caso di test è causato dell’introduzione di nuovi \emph{bug} all’interno del software, infatti questo può
 derivare dalla presenza di un metodo \emph{flaky} presente all’interno della suite di test.
-
 Un test si definisce \emph{flaky} se il suo comportamento non può essere stabilito in \textbf{maniera deterministica}. Appare quindi evidente che la presenza di un metodo \emph{flaky}
 all’interno della test suite possa incidere non solo sulla qualità, ma anche sui tempi di rilascio e sui costi del software. Inoltre, analisi condotte in diversi studi
 focalizzati sui \emph{flaky test}, hanno mostrato che una delle criticità più frequenti quando si manifesta un \emph{flaky} è capire che cosa l’ha scatenato.
