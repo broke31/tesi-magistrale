@@ -14,5 +14,8 @@ The main file is **indice.tex** you can edit it.
 
 ### Index
 ![Index](/Example/indice-3-1.jpg)
-![Index](/Example/indice-3-1.jpg)
+![Index](/Example/indice-4-1.jpg)
 
+
+### Introduzione
+![Introduzione](/Example/indice-7-1.jpg)
