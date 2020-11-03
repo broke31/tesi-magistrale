@@ -3,11 +3,6 @@
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 # Unisa-LaTeX
 
-
-
-## How to use it
-The main file is **indice.tex** you can edit it.
-
 ## Screenshots
 ### Title Page
 ![Title Page](/Example/indice-1-1.jpg)
