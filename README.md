@@ -19,3 +19,12 @@ The main file is **indice.tex** you can edit it.
 
 ### Introduzione
 ![Introduzione](/Example/indice-7-1.jpg)
+![Introduzione](/Example/indice-8-1.jpg)
+![Introduzione](/Example/indice-9-1.jpg)
+
+### Conclusioni
+![Conclusioni](/Example/indice-80-1.jpg)
+![Conclusioni](/Example/indice-81-1.jpg)
+
+
+
